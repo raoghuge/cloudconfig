@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+eureka:
+  instance.leaseRenewalIntervalInSeconds: 3
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+multipart:
+  maxFileSize: 1073741824
+  maxRequestSize: 1073741824
+
+#zuul:
+#  routes:
+#    auth-service: /auth-service/**
+
+#logging.level.org.springframework.cloud: DEBUG
